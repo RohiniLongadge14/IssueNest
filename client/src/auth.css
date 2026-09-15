@@ -1,0 +1,168 @@
+/*
+  IssueNest authentication styles.
+
+  The main styles are currently maintained in App.css.
+  This file is kept because App.jsx imports auth.css.
+*/
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(37, 99, 235, 0.09),
+      transparent 40%
+    ),
+    #f8fafc;
+}
+
+.auth-card {
+  width: min(430px, 100%);
+  padding: 38px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 15px 45px rgba(15, 23, 42, 0.08);
+}
+
+.auth-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.auth-logo-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.auth-card h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 28px;
+  letter-spacing: -0.025em;
+}
+
+.auth-card > p {
+  margin: 9px 0 25px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group label {
+  color: #334155;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.form-group input {
+  width: 100%;
+  height: 44px;
+  padding: 0 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 13px;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+.auth-submit {
+  width: 100%;
+  height: 44px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.auth-submit:hover {
+  background: #1d4ed8;
+}
+
+.auth-footer {
+  margin-top: 22px;
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.auth-footer a {
+  color: #2563eb;
+  font-weight: 750;
+}
+
+.auth-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-bottom: 18px;
+  padding: 11px 13px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.auth-error-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.password-help {
+  color: #94a3b8;
+  font-size: 10px;
+}
